@@ -16,6 +16,49 @@ body {
     padding: 0;
     /* "cover" only covers whatever content we have */
     background: url(../img/showcase.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* gets rid of space on top of the page */
+    overflow-y: hidden;
+}
+
+#showcase .container {
+    margin-top: 25vh;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    margin-top: -3rem;
+}
+
+#showcase h1 {
+    /* border: 1px solid blue; */
+    font-size: 8rem;
+    text-shadow: 3px 3px #252529;
+    margin-bottom: 0;
+    margin-top: 4rem;
+}
+
+#showcase h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 0;
+}
+
+#showcase .where-to-eat {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* Utility classes - gonna use them all around the site */
+
+.container {
+    max-width: 2048px;
+    text-align: center;
+    /* 0 top/bottom, auto l/r pushes container to the center */
+    margin: 0 auto;
+    padding: 0 3rem;
 }
 
 /* Navigation section START */
