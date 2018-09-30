@@ -1,3 +1,4 @@
+// jQuery with landing_style.css: https://codepen.io/neilso/pen/ziwgI
 $(function() {
   menu = $("nav ul");
 

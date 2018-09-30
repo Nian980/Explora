@@ -9,6 +9,17 @@ body {
     line-height: 1.5;
 }
 
+/* Showcase section START */
+
+#showcase {
+    margin: 0;
+    padding: 0;
+    /* "cover" only covers whatever content we have */
+    background: url(../img/showcase.jpg) no-repeat center/cover;
+}
+
+/* Navigation section START */
+
 nav {
     height: 40px;
     width: 100%;
@@ -113,3 +124,5 @@ Often used with pseudoelements.
 .cf {
     zoom: 1;
 }
+
+/* Navigation section END */
