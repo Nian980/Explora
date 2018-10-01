@@ -1,10 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=PT+Sans');
 body {
     font-family: 'PT Sans', sans-serif;
+    /* old color: #252529, image of phone bg: rgb 63 63 63 */
     background-color: #252529;
     margin: 0;
     color: #fff;
     line-height: 1.5;
+}
+
+/* CSS Variables */
+
+:root {
+    /* scope is root, so we can use them everywhere */
+    --primary-color: #bd1828;
+    --primary-color-hover: #f14859;
+    --secondary-color: rgb(28, 13, 241);
+    --secondary-color-hover: rgb(56, 45, 214);
+    --light-color: #f4f4f4;
 }
 
 /* Showcase section START */
@@ -87,21 +99,46 @@ body {
 
 .lead {
     /* for explanation texts in each section, in a p tag */
-    font-size: 1rem;
+    font-size: 1.1rem;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
 }
 
 /* Sections  */
 
 .section {
     padding: 2rem 0;
+}
+
+.section h3 {
     font-size: 2rem;
-    font-weight: 200;
+    font-weight: 150;
 }
 
 .section-head {
-    font-size: 2.5rem;
+    font-size: 3rem;
     font-weight: 300;
     margin: 0;
+}
+
+.section-image {
+    width: 80%;
+}
+
+.section#info {
+    background: url(../img/info2.jpg) no-repeat bottom/cover;
+    padding: 10rem 0;
+    /* text-shadow: 1px 1px black;
+    text-shadow: -1px -1px black; */
+}
+
+.opacity-class:hover {
+    opacity: 0.5;
+    /* For IE8 and earlier */
+    filter: alpha(opacity=50);
 }
 
 /* Navigation section START */
