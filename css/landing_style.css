@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+body {
+    font-family: 'PT Sans', sans-serif;
+    /* old color: #252529, image of phone bg: rgb 63 63 63 */
+    background-color: #252529;
+    margin: 0;
+    color: #fff;
+    line-height: 1.5;
+}
+
+/* CSS Variables */
+
+:root {
+    /* scope is root, so we can use them everywhere */
+    --primary-color: #bd1828;
+    --primary-color-hover: #f14859;
+    --secondary-color: rgb(28, 13, 241);
+    --secondary-color-hover: rgb(56, 45, 214);
+    --light-color: #f4f4f4;
+}
+
+/* Showcase section START */
+
+#showcase {
+    margin: 0;
+    padding: 0;
+    /* "cover" only covers whatever content we have */
+    background: url(../img/showcase.jpg) no-repeat center/cover;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* gets rid of space on top of the page */
+    overflow-y: hidden;
+}
+
+#showcase .container {
+    margin-top: 25vh;
+}
+
+.logo {
+    /* border: 1px solid red; */
+    margin-top: -3rem;
+}
+
+#showcase h1 {
+    /* border: 1px solid blue; */
+    font-size: 8rem;
+    text-shadow: 2px 2px #252529;
+    margin-bottom: 0;
+    margin-top: 3rem;
+}
+
+#showcase h2 {
+    font-size: 1.5rem;
+    font-weight: 200;
+    margin-bottom: 0;
+    margin-top: 1rem;
+}
+
+#showcase .where-to-eat {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+.arrow-bar {
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.arrow-bar:hover {
+    background-color: #25252975;
+}
+
+.arrow-down {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+}
+
+/* Footer. unnecessary for now, for when more functionality and parts of website comes */
+
+/* footer .footer-cols {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.footer-bottom {
+    margin: 1rem;
+}
+
+/* Utility classes - gonna use them all around the site */
+
+.container {
+    max-width: 2048px;
+    text-align: center;
+    /* 0 top/bottom, auto l/r pushes container to the center */
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.lead {
+    /* for explanation texts in each section, in a p tag */
+    font-size: 1.1rem;
+}
+
+.bg-light {
+    background: var(--light-color);
+    color: #333;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Sections  */
+
+.section {
+    padding: 2rem 0;
+}
+
+.section h3 {
+    font-size: 2rem;
+    font-weight: 150;
+}
+
+.section-head {
+    font-size: 3rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.section-image {
+    width: 80%;
+}
+
+.section#info {
+    background: url(../img/info2.jpg) no-repeat bottom/cover;
+    padding: 10rem 0;
+    /* text-shadow: 1px 1px black;
+    text-shadow: -1px -1px black; */
+}
+
+.opacity-class:hover {
+    opacity: 0.5;
+    /* For IE8 and earlier */
+    filter: alpha(opacity=50);
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-container p, .grid-container h2 {
+    text-align: left;
+}
+
+/* Navigation section START */
+
+nav {
+    height: 40px;
+    width: 100%;
+    background-color: #333;
+    color: #eee;
+    position: fixed;
+    z-index: 10;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: #eee;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #444;
+}
+
+nav a#openup {
+    display: none;
+}
+
+@media screen and (max-width: 580px) {
+    /* stuff I added */
+    .arrow-bar, .arrow-down {
+        /* on small screens, do not display the arrow down */
+        display: none;
+    }
+    .logo {
+        /* no margin-top for logo when mobile, cuz otherwise it'll be pushed too far up */
+        margin-top: 0;
+    }
+    #showcase {
+        /* So on mobile the showcase only takes up part of the screen */
+        height: 60vh;
+    }
+    #showcase .container {
+        margin-top: 15vh;
+    }
+    #showcase h1 {
+        margin-top: 2rem;
+        font-size: 6rem;
+    }
+    #showcase h2 {
+        font-size: 1rem;
+    }
+    #showcase .where-to-eat {
+        font-size: 1.5rem;
+    }
+    nav {
+        height: auto;
+        border-bottom: 0;
+        font-size: 2rem;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+    nav a:hover {
+        background: #444;
+    }
+    nav a#openup:after {
+        /* This builds the 3 bars of the menu */
+        content: "|||";
+        /* transform is for Firefox */
+        transform: rotate(-90deg);
+        /* ms-transform is for IE 9 */
+        -ms-transform: rotate(-90deg);
+        /* webkit is for Safari and Chrome */
+        -webkit-transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 30px;
+        top: 35px;
+    }
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+}
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+/* 
+If the element can fit horizontally in the space next to another element which is floated, it will. 
+Unless you apply clear to that element in the same direction as the float. 
+Then the element will move down below the floated element.
+clear: both; are used to ensure the footer clears past elements that are floated in either direction/
+Often used with pseudoelements.
+*/
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+}
+
+/* Navigation section END */
+
+@media screen and (max-width: 780px) {
+    .grid-container {
+        /* get rid of 2 columns when in mobile mode */
+        grid-template-columns: 1fr;
+    }
+}
