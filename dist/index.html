@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/landing_style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
         crossorigin="anonymous">
+    <!-- aria-hidden improves web-accessibility by hiding it for web readers -->
 </head>
 
 <body>
@@ -23,7 +24,7 @@
                         <a href='#showcase'>Explora</a>
                     </li>
                     <li>
-                        <a href='#showcase'>About</a>
+                        <a href='#about'>About</a>
                     </li>
                     <li>
                         <a href='#video'>Video</a>
@@ -45,12 +46,34 @@
                 the same question comes up every week. </h2>
             <h2 class="where-to-eat">Where to eat?</h2>
         </div>
+        <!-- Stuff to do: move page down when clicked -->
+        <div class="arrow-bar">
+            <div class="arrow-down"></div>
+        </div>
     </div>
+
+    <!-- Section 1: What is Explora? -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-head">
+                <!-- use fa-3x -->
+                <i class="fa fa-compass fa-spin" aria-hidden="true"></i>
+                About
+            </h2>
+            <h3>LA & NY-Based Startup</h3>
+            <p class="lead">
+                EXPLORA<sup>TM</sup> was started from two dorms on opposite coasts. It aims to solve a fundamental
+                issue that many college students face. Making decisions about WHERE to eat next. People have different
+                tastes and different cravings at different times - we aim to provide a central platform where you and
+                your friends can collate any and all your wants - whether you're in the mood for something spicy,
+                Chinese, or salads even, and we will give you tell you the closest and best place that'll satisfy
+                everyone.
+            </p>
+        </div>
+    </section>
 
     <!-- Section 0: It's best to put a web app demo of the app.
         Have something like google maps-style with some restauransts pinned -->
-
-    <!-- Section 1: What is Explora? -->
 
     <!-- Section 2: Video -->
 
