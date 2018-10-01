@@ -155,7 +155,7 @@ nav a#openup {
     }
     #showcase {
         /* So on mobile the showcase only takes up part of the screen */
-        height: 80vh;
+        height: 60vh;
     }
     #showcase .container {
         margin-top: 15vh;
@@ -173,7 +173,7 @@ nav a#openup {
     nav {
         height: auto;
         border-bottom: 0;
-        font-size: 1.5rem;
+        font-size: 2rem;
     }
     nav ul {
         display: none;
@@ -207,8 +207,8 @@ nav a#openup {
         height: 30px;
         display: inline-block;
         position: absolute;
-        right: 25px;
-        top: 30px;
+        right: 30px;
+        top: 35px;
     }
     nav a#openup {
         display: block;
