@@ -1,0 +1,23 @@
+{
+  "name": "Explora",
+  "version": "1.0.0",
+  "description": "Test Website for Explora (project codename!)",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nian980/Explora.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Nian980/Explora/issues"
+  },
+  "homepage": "https://nian980.github.com/Explora",
+  "dependencies": {
+    "gh-pages": "^2.0.0"
+  }
+}
