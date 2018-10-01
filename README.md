@@ -6,6 +6,7 @@ Explora&trade; is an app that allows users to search for restaurants based on ta
 
 Stuff to do:
 Also for class="arrow-bar", animate the opacity so that it smoothly changes. (Maybe use Sass?)
+Add JavaScipt typing effect
 
 Credits:
 Showcase Photo:
