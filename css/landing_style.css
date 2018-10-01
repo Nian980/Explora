@@ -208,6 +208,9 @@ nav a#openup {
 
 @media screen and (max-width: 580px) {
     /* stuff I added */
+    .hide-on-mobile {
+        display: none
+    }
     .arrow-bar, .arrow-down {
         /* on small screens, do not display the arrow down */
         display: none;
