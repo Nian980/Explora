@@ -22,3 +22,42 @@ $(function() {
   });
   $(".open-menu").height($(window).height());
 });
+
+// Smooth Scrolling code snippet with jQuery
+//for the navigation bar
+$(".cf a").on("click", function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800,
+      function() {
+        window.location.hash = hash;
+      }
+    );
+  }
+});
+
+//for the arrow in showcase
+$(".arrow").on("click", function(event) {
+  if (this.hash !== "") {
+    event.preventDefault();
+
+    const hash = this.hash;
+
+    $("html, body").animate(
+      {
+        scrollTop: $(hash).offset().top
+      },
+      800,
+      function() {
+        window.location.hash = hash;
+      }
+    );
+  }
+});

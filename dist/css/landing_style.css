@@ -87,6 +87,18 @@ body {
     -ms-transform: rotate(45deg);
 }
 
+/* Footer. unnecessary for now, for when more functionality and parts of website comes */
+
+/* footer .footer-cols {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.footer-bottom {
+    margin: 1rem;
+}
+
 /* Utility classes - gonna use them all around the site */
 
 .container {
@@ -105,6 +117,10 @@ body {
 .bg-light {
     background: var(--light-color);
     color: #333;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* Sections  */
@@ -145,6 +161,9 @@ body {
     display: grid;
     grid-gap: 20px;
     grid-template-columns: 1fr 1fr;
+}
+
+.grid-container p, .grid-container h2 {
     text-align: left;
 }
 
@@ -213,10 +232,6 @@ nav a#openup {
     }
     #showcase .where-to-eat {
         font-size: 1.5rem;
-    }
-    .grid-container {
-        /* get rid of grid when in mobile mode */
-        display: block;
     }
     nav {
         height: auto;
@@ -288,3 +303,10 @@ Often used with pseudoelements.
 }
 
 /* Navigation section END */
+
+@media screen and (max-width: 780px) {
+    .grid-container {
+        /* get rid of 2 columns when in mobile mode */
+        grid-template-columns: 1fr;
+    }
+}

@@ -5,7 +5,6 @@ Test Website for Explora (project codename!)
 Explora&trade; is an app that allows users to search for restaurants based on tags.
 
 Stuff to do:
-For class="arrow-bar", when clicked on it should move the page up and show the content below.
 Also for class="arrow-bar", animate the opacity so that it smoothly changes. (Maybe use Sass?)
 
 Credits:
