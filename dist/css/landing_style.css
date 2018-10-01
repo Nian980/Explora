@@ -141,6 +141,13 @@ body {
     filter: alpha(opacity=50);
 }
 
+.grid-container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
 /* Navigation section START */
 
 nav {
@@ -206,6 +213,10 @@ nav a#openup {
     }
     #showcase .where-to-eat {
         font-size: 1.5rem;
+    }
+    .grid-container {
+        /* get rid of grid when in mobile mode */
+        display: block;
     }
     nav {
         height: auto;
