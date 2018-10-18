@@ -12,5 +12,5 @@ Credits:
 Showcase Photo:
 https://www.pexels.com/photo/aerial-photo-of-high-rise-building-754587/
 
-Nav menu:
+Nav menu reference:
 https://codepen.io/neilso/pen/ziwgI
